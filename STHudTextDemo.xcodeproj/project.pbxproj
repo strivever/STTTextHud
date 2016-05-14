@@ -13,6 +13,14 @@
 		D3165CEF1CE6FB2B0041391C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3165CED1CE6FB2B0041391C /* Main.storyboard */; };
 		D3165CF11CE6FB2C0041391C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3165CF01CE6FB2C0041391C /* Assets.xcassets */; };
 		D3165CF41CE6FB2C0041391C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3165CF21CE6FB2C0041391C /* LaunchScreen.storyboard */; };
+		D3165D011CE6FB870041391C /* STTextHud.m in Sources */ = {isa = PBXBuildFile; fileRef = D3165CFD1CE6FB870041391C /* STTextHud.m */; };
+		D3165D021CE6FB870041391C /* STTextHud.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3165CFE1CE6FB870041391C /* STTextHud.xib */; };
+		D3165D031CE6FB870041391C /* STTextHudTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D3165D001CE6FB870041391C /* STTextHudTool.m */; };
+		D3165D061CE6FBEE0041391C /* GCLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3165D051CE6FBEE0041391C /* GCLoadingView.m */; };
+		D3165D091CE6FC450041391C /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = D3165D081CE6FC450041391C /* NSString+Size.m */; };
+		D3165D0C1CE702E00041391C /* STError@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3165D0A1CE702E00041391C /* STError@2x.png */; };
+		D3165D0D1CE702E00041391C /* STSuccess@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3165D0B1CE702E00041391C /* STSuccess@2x.png */; };
+		D3165D0F1CE703BD0041391C /* angle-mask@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3165D0E1CE703BD0041391C /* angle-mask@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,18 @@
 		D3165CF01CE6FB2C0041391C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3165CF31CE6FB2C0041391C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3165CF51CE6FB2C0041391C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3165CFC1CE6FB870041391C /* STTextHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTextHud.h; sourceTree = "<group>"; };
+		D3165CFD1CE6FB870041391C /* STTextHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTextHud.m; sourceTree = "<group>"; };
+		D3165CFE1CE6FB870041391C /* STTextHud.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STTextHud.xib; sourceTree = "<group>"; };
+		D3165CFF1CE6FB870041391C /* STTextHudTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTextHudTool.h; sourceTree = "<group>"; };
+		D3165D001CE6FB870041391C /* STTextHudTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTextHudTool.m; sourceTree = "<group>"; };
+		D3165D041CE6FBEE0041391C /* GCLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCLoadingView.h; sourceTree = "<group>"; };
+		D3165D051CE6FBEE0041391C /* GCLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCLoadingView.m; sourceTree = "<group>"; };
+		D3165D071CE6FC450041391C /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
+		D3165D081CE6FC450041391C /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
+		D3165D0A1CE702E00041391C /* STError@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "STError@2x.png"; sourceTree = "<group>"; };
+		D3165D0B1CE702E00041391C /* STSuccess@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "STSuccess@2x.png"; sourceTree = "<group>"; };
+		D3165D0E1CE703BD0041391C /* angle-mask@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "angle-mask@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,7 @@
 		D3165CE31CE6FB2B0041391C /* STHudTextDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D3165CFB1CE6FB760041391C /* STTextHud */,
 				D3165CE71CE6FB2B0041391C /* AppDelegate.h */,
 				D3165CE81CE6FB2B0041391C /* AppDelegate.m */,
 				D3165CEA1CE6FB2B0041391C /* ViewController.h */,
@@ -77,6 +98,25 @@
 				D3165CE51CE6FB2B0041391C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3165CFB1CE6FB760041391C /* STTextHud */ = {
+			isa = PBXGroup;
+			children = (
+				D3165D0E1CE703BD0041391C /* angle-mask@3x.png */,
+				D3165D0A1CE702E00041391C /* STError@2x.png */,
+				D3165D0B1CE702E00041391C /* STSuccess@2x.png */,
+				D3165D071CE6FC450041391C /* NSString+Size.h */,
+				D3165D081CE6FC450041391C /* NSString+Size.m */,
+				D3165D041CE6FBEE0041391C /* GCLoadingView.h */,
+				D3165D051CE6FBEE0041391C /* GCLoadingView.m */,
+				D3165CFC1CE6FB870041391C /* STTextHud.h */,
+				D3165CFD1CE6FB870041391C /* STTextHud.m */,
+				D3165CFE1CE6FB870041391C /* STTextHud.xib */,
+				D3165CFF1CE6FB870041391C /* STTextHudTool.h */,
+				D3165D001CE6FB870041391C /* STTextHudTool.m */,
+			);
+			path = STTextHud;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +150,7 @@
 				TargetAttributes = {
 					D3165CE01CE6FB2A0041391C = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = G49DMHKN44;
 					};
 				};
 			};
@@ -137,8 +178,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3165CF41CE6FB2C0041391C /* LaunchScreen.storyboard in Resources */,
+				D3165D0D1CE702E00041391C /* STSuccess@2x.png in Resources */,
 				D3165CF11CE6FB2C0041391C /* Assets.xcassets in Resources */,
 				D3165CEF1CE6FB2B0041391C /* Main.storyboard in Resources */,
+				D3165D021CE6FB870041391C /* STTextHud.xib in Resources */,
+				D3165D0F1CE703BD0041391C /* angle-mask@3x.png in Resources */,
+				D3165D0C1CE702E00041391C /* STError@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,8 +195,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3165CEC1CE6FB2B0041391C /* ViewController.m in Sources */,
+				D3165D031CE6FB870041391C /* STTextHudTool.m in Sources */,
 				D3165CE91CE6FB2B0041391C /* AppDelegate.m in Sources */,
+				D3165D061CE6FBEE0041391C /* GCLoadingView.m in Sources */,
+				D3165D091CE6FC450041391C /* NSString+Size.m in Sources */,
 				D3165CE61CE6FB2B0041391C /* main.m in Sources */,
+				D3165D011CE6FB870041391C /* STTextHud.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,10 +312,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: ming zong (XE5EV4Y65Q)";
 				INFOPLIST_FILE = STHudTextDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = StrivEver.STHudTextDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = StrivEver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8a038ca3-90fe-4bcb-bc7d-308e73b4b38e";
 			};
 			name = Debug;
 		};
@@ -274,10 +326,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: ming zong (XE5EV4Y65Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: ming zong (XE5EV4Y65Q)";
 				INFOPLIST_FILE = STHudTextDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = StrivEver.STHudTextDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = StrivEver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8a038ca3-90fe-4bcb-bc7d-308e73b4b38e";
 			};
 			name = Release;
 		};

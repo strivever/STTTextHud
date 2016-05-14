@@ -69,9 +69,7 @@
     STTextHud * hud = [[STTextHud alloc]init];
     hud.priority = Priority_Hight;
     hud.hudStyle = STHudLoadingWithCustomView;
-    UIView * vv = [UIView new];
-    vv.backgroundColor = [UIColor redColor];
-    hud.customView = vv;
+    hud.customView = customView;
     [hud showText:title withSecond:111];
 }
 

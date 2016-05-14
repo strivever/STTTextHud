@@ -9,7 +9,12 @@
 #import "STTextHud.h"
 #import "AppDelegate.h"
 #import "GCLoadingView.h"
+#import "NSString+Size.h"
 #define  defaeltDelay 1.5
+//定义高度
+#define kUIScreenSize [UIScreen mainScreen].bounds.size
+#define kUIScreenWidth kUIScreenSize.width
+#define kUIScreenHeight kUIScreenSize.height
 @interface STTextHud ()
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (nonatomic)NSTimeInterval delay;
@@ -95,7 +100,6 @@
         self.labelTopContraint.constant = 0;
         font = [UIFont systemFontOfSize:15];
         CGSize textSize = [text sizeWithFont:[UIFont systemFontOfSize:15] maxSize:CGSizeMake(MAXFLOAT, 21)];
-        MyLog(@"%f",textSize.width);
         CGFloat hudWidth = textSize.width;
         if (hudWidth <= kUIScreenWidth - 100 - 40) {
             hudWidth += 41;
@@ -108,7 +112,6 @@
         self.center = CGPointMake(kUIScreenWidth/2.0, kUIScreenHeight/2.0);
         [self.actIndicator startAnimating];
         self.titleLabel.text = text;
-        self.titleLabel.backgroundColor = [UIColor redColor];
     }else if(self.hudStyle == STHudLoadingWithCustomView){
         if (self.customView) {
             self.loadView.hidden = NO;

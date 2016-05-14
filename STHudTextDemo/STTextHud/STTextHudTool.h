@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 @interface STTextHudTool : NSObject
 /**
  *  错误提示 默认
